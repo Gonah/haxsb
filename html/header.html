@@ -1,0 +1,106 @@
+
+<div id="tabbed_box_1" class="tabbed_box">
+  <div class="tabbed area">
+  <center>
+<table class="tableclass">
+<tbody>
+<tr>
+<td class="c" style="border: 0; background: none" align="center">
+<b>Division I</b><br>
+<a href="http://s13.zetaboards.com/HaxSB/members/?search_type=start&amp;name=&amp;group=1508431&amp;sort=name&amp;order=a"><img class="texas_img" src="http://i66.tinypic.com/2m2idz6.jpg" alt="Apollo"></a>
+<a href="http://s13.zetaboards.com/HaxSB/members/?search_type=start&amp;name=&amp;group=49186&amp;sort=name&amp;order=a"><img class="arsenal_img" src="http://i66.tinypic.com/2e55n5l.jpg" alt="Hu3"></a>
+<a href="http://s13.zetaboards.com/HaxSB/members/?search_type=start&amp;name=&amp;group=1507261&amp;sort=name&amp;order=a"><img class="titan_img" src="http://i.imgur.com/OIjpBWC.png" alt="Orion"></a>
+<a href="http://s13.zetaboards.com/HaxSB/members/?search_type=start&amp;name=&amp;group=49195&amp;sort=name&amp;order=a"><img class="arsenal_img" src="http://i59.tinypic.com/33jqyom.jpg" alt="Pyro"></a>
+<a href="http://s13.zetaboards.com/HaxSB/members/?search_type=start&amp;name=&amp;group=1508469&amp;sort=name&amp;order=a"><img class="texas_img" src="http://i65.tinypic.com/33yntwz.jpg" alt="Ninjas"></a>
+<a href="http://s13.zetaboards.com/HaxSB/members/?search_type=start&amp;name=&amp;group=1508423&amp;sort=name&amp;order=a"><img class="uranus_img" src="http://i66.tinypic.com/103djqs.jpg" alt="Uranus"></a>
+</td><td class="c" style="border: 0; background: none" align="center">
+<b>Division II</b><br>
+<a href="http://s13.zetaboards.com/HaxSB/members/?search_type=start&amp;name=&amp;group=1507570&amp;sort=name&amp;order=a"><img class="texas_img" src="http://i63.tinypic.com/rhjvw1.jpg" alt="Babies"></a>
+<a href="http://s13.zetaboards.com/HaxSB/members/?search_type=start&amp;name=&amp;group=1508471&amp;sort=name&amp;order=a"><img class="texas_img" src="http://i67.tinypic.com/epn1hw.jpg" alt="Dynasty Destroyers"></a>
+<a href="http://s13.zetaboards.com/HaxSB/members/?search_type=start&amp;name=&amp;group=1508472&amp;sort=name&amp;order=a"><img class="texas_img" src="http://i63.tinypic.com/2gv7h8m.jpg" alt="Fringe"></a>
+<a href="http://s13.zetaboards.com/HaxSB/members/?search_type=start&amp;name=&amp;group=1508475&amp;sort=name&amp;order=a"><img class="texas_img" src="http://i66.tinypic.com/24w98hk.jpg" alt="Ocean Men"></a>
+<a href="http://s13.zetaboards.com/HaxSB/members/?search_type=start&amp;name=&amp;group=1508470&amp;sort=name&amp;order=a"><img class="texas_img" src="http://i65.tinypic.com/22gtuu.jpg" alt="Ottawa"></a>
+<a href="http://s13.zetaboards.com/HaxSB/members/?search_type=start&amp;name=&amp;group=1508473&amp;sort=name&amp;order=a"><img class="texas_img" src="http://i66.tinypic.com/v3puys.jpg" alt="Pirates"></a>
+<a href="http://s13.zetaboards.com/HaxSB/members/?search_type=start&amp;name=&amp;group=1508467&amp;sort=name&amp;order=a"><img class="texas_img" src="http://i65.tinypic.com/1jam8z.jpg" alt="Raccoons"></a>
+<a href="http://s13.zetaboards.com/HaxSB/members/?search_type=start&amp;name=&amp;group=1508468&amp;sort=name&amp;order=a"><img class="texas_img" src="http://i64.tinypic.com/jrdys3.jpg" alt="River"></a>
+</td>
+</tr>
+</tbody>
+</table>
+        <script>
+    function tabSwitch_2(active, number, tab_prefix, content_prefix) {
+     
+    for (var i=1; i < number+1; i++) {
+      document.getElementById(content_prefix+i).style.display = 'none';
+      document.getElementById(tab_prefix+i).className = '';
+    }
+    document.getElementById(content_prefix+active).style.display = 'block';
+    document.getElementById(tab_prefix+active).className = 'active';    
+     
+}
+    </script> 
+<ul class="tabs">
+    <li><a href="javascript:tabSwitch_2(1, 5, 'tab', 'content');" id="tab1" class="active">Divison I</a></li>
+    <li><a href="javascript:tabSwitch_2(2, 5, 'tab', 'content');" id="tab2">Divison II</a></li>
+    <li><a href="javascript:tabSwitch_2(3, 5, 'tab', 'content');" id="tab3">League Schedule</a></li>
+    <li><a href="javascript:tabSwitch_2(4, 5, 'tab', 'content');" id="tab4">League Info</a></li>
+    <li><a href="javascript:tabSwitch_2(5, 5, 'tab', 'content');" id="tab5">Useful Links</a></li>
+</ul>
+
+    <div id="content1" class="content">
+      <table class="standings">
+        <tbody id="division_1">
+          <tr>
+            <td>Team</td>
+            <td>GP</td>
+            <td>W</td>
+            <td>L</td>
+            <td>Win %</td>
+            <td>GF</td>
+            <td>GA</td>
+            <td>GFA</td>
+            <td>GAA</td>
+            <td>Streak</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="content2" class="content">
+      <table class="standings">
+        <tbody id="division_2">
+          <tr>
+            <td>Team</td>
+            <td>GP</td>
+            <td>W</td>
+            <td>L</td>
+            <td>Win %</td>
+            <td>GF</td>
+            <td>GA</td>
+            <td>GFA</td>
+            <td>GAA</td>
+            <td>Streak</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="content3" class="content">
+     <nav class="ij-effect-20">
+   <a href="https://docs.google.com/spreadsheets/d/1EQY5f7rTH_KGCXEtJ5BL1vdiNijHYW3UAaIRfvBi0sA/pubhtml"><span data-hover="Division I">Divison I Schedule</span></a> 
+   <a href="https://docs.google.com/spreadsheets/d/1iHeLMUUObFy4L-prAw1VMi2JKW-_pbemA6d2f0gojK0/pubhtml"><span data-hover="Division II">Divison II Schedule</span></a>
+    </nav>
+    </div>
+    <div id="content4" class="content">
+    <nav class="ij-effect-20">
+<a href="http://s13.zetaboards.com/HaxSB/pages/staff/"><span data-hover="Don't Waste Our Time">Message the Staff</span></a>
+<a href="https://docs.google.com/spreadsheets/d/1AiIxlnEh8Qt06HYz68uIhVWBvv3angYn-5xXhnvv6gQ/pubhtml"><span data-hover="Learn this shit">League Actions</span></a>
+   </nav>
+   </div>
+   <div id="content5" class="content">
+   <nav class="ij-effect-20">
+<a href="http://s13.zetaboards.com/HaxSB/pages/league_db/"><span data-hover="So much Data">League Database</span></a>
+<a href="https://www.facebook.com/haxspacebounce/"><span data-hover="Zuckerberg">HaxSB Facebook</span></a>
+<a href="WIKI UNDER CONSTRUCTION"><span data-hover="Work In Progress">HaxSB Wiki Page</span></a>	
+  </nav>
+  </div>
+  </div>
+</div>
