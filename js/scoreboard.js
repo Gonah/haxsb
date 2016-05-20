@@ -1,8 +1,8 @@
 // Update each ssn
-var seasonStart = "2016-03-13";
-var d1SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/1EQY5f7rTH_KGCXEtJ5BL1vdiNijHYW3UAaIRfvBi0sA/1/public/values?alt=json"
-  var d2SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/1iHeLMUUObFy4L-prAw1VMi2JKW-_pbemA6d2f0gojK0/1/public/values?alt=json"
- var daysSkipped = 1;
+var seasonStart = "2016-05-22";
+var d1SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/13jFWsVajerfpFcfK1L64NdQmfTU8JFpnAlmpa2527Q0/1/public/values?alt=json"
+  var d2SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/1pdFQTFKaNm9Gj2CyKGoi8r4fzkhDOF93SnGD2MXfL00/1/public/values?alt=json"
+ var daysSkipped = 0;
  var numTeamsD1 = 6;
  var numTeamsD2 = 8;
  // Don't change anything below this
@@ -14,12 +14,12 @@ var gameday = parseInt((((daysSinceStart+1)/7)*2)+1-daysSkipped);
  if(today < seasonStartDate) {
     gameday = 1;
  }
-/*$.get( d1SpreadsheetUrl, function( data ) {
+$.get( d1SpreadsheetUrl, function( data ) {
        updateDivision(data, numTeamsD1, 'd1');
 });
 $.get( d2SpreadsheetUrl, function( data ) {
        updateDivision(data, numTeamsD2, 'd2');
-});*/
+});
  function updateDivision(responseJson, numTeams, division) {
    var ul = $('#'+division);
    var divisionName = division=='d1' ? 'Divsion I' : 'Division II';
