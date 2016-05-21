@@ -1,12 +1,15 @@
 // Update each ssn
 var seasonStart = "2016-05-22";
-var d1SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/13jFWsVajerfpFcfK1L64NdQmfTU8JFpnAlmpa2527Q0/1/public/values?alt=json"
-  var d2SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/1pdFQTFKaNm9Gj2CyKGoi8r4fzkhDOF93SnGD2MXfL00/1/public/values?alt=json"
+var d1SpreadsheetKey = "13jFWsVajerfpFcfK1L64NdQmfTU8JFpnAlmpa2527Q0"
+var d2SpreadsheetKey = "1pdFQTFKaNm9Gj2CyKGoi8r4fzkhDOF93SnGD2MXfL00"
  var daysSkipped = 0;
  var numTeamsD1 = 6;
  var numTeamsD2 = 8;
  // Don't change anything below this
- var seasonStartDate = new Date(seasonStart+"T00:00:00-0500");
+var d1SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/"+d1SpreadsheetKey+"/1/public/values?alt=json"
+  var d2SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/"+d2SpreadsheetKey+"/1/public/values?alt=json"
+  var d1SpreadsheetPubHtml = "https://docs.google.com/spreadsheets/d/"+d1SpreadsheetKey+"/pubhtml"
+  var d2SpreadsheetPubHtml = "https://docs.google.com/spreadsheets/d/"+d2SpreadsheetKey+"/pubhtml"
  var today = new Date();
  var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
 var daysSinceStart = Math.round(Math.abs((seasonStartDate.getTime() - today.getTime())/(oneDay)));
@@ -43,3 +46,11 @@ $.get( d2SpreadsheetUrl, function( data ) {
      ul.append('<li style="margin-right: 1px; width: 90px;"><p>' + homeTeam + ' ('+game.gsx$homerecord.$t+') <span class="gamebox-score">' + homeScore + '</span></p><p>' + awayTeam + ' ('+game.gsx$awayrecord.$t+') <span class="gamebox-score">' + awayScore + '</span></p><p>'+gameTime+'</p></li>');
    }
  }
+ $(function() {
+  $("#d1").on("click",function() {
+    window.open(d1SpreadsheetPubHtml, '_blank'); 
+  });
+    $("#d2").on("click",function() {
+  window.open(d2SpreadsheetPubHtml, '_blank'); 
+  });
+});
