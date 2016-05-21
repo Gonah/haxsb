@@ -26,6 +26,8 @@ $.get( d2SpreadsheetUrl, function( data ) {
 });
  function updateDivision(responseJson, numTeams, division) {
    var ul = $('#'+division);
+   var link = (division=='d1')?d1SpreadsheetPubHtml:d2SpreadsheetPubHtml;
+   ul.attr('onclick', "window.open('"+link+"', '_blank');");
    var divisionName = division=='d1' ? 'Divsion I' : 'Division II';
    var gameDayName = ((gameday-1)%2==(0+daysSkipped)) ? "Sunday" : "Thursday";
    var week = Math.ceil(gameday/2);
@@ -47,11 +49,3 @@ $.get( d2SpreadsheetUrl, function( data ) {
      ul.append('<li style="margin-right: 1px; width: 90px;"><p>' + homeTeam + ' ('+game.gsx$homerecord.$t+') <span class="gamebox-score">' + homeScore + '</span></p><p>' + awayTeam + ' ('+game.gsx$awayrecord.$t+') <span class="gamebox-score">' + awayScore + '</span></p><p>'+gameTime+'</p></li>');
    }
  }
- $(function() {
-  $("#d1").on("click",function() {
-    window.open(d1SpreadsheetPubHtml, '_blank'); 
-  });
-    $("#d2").on("click",function() {
-  window.open(d2SpreadsheetPubHtml, '_blank'); 
-  });
-});
