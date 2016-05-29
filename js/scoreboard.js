@@ -10,7 +10,8 @@ var d1SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/"+d1Spreadshe
   var d2SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/"+d2SpreadsheetKey+"/1/public/values?alt=json"
   var d1SpreadsheetPubHtml = "https://docs.google.com/spreadsheets/d/"+d1SpreadsheetKey+"/pubhtml"
   var d2SpreadsheetPubHtml = "https://docs.google.com/spreadsheets/d/"+d2SpreadsheetKey+"/pubhtml"
- var seasonStartDate = new Date(seasonStart+"T00:00:00-0500");
+  var seasonStartComps = seasonStart.split('-');
+ var seasonStartDate = new Date(seasonStartComps[0], seasonStartComps[1], seasonStartComps[2]);
  var today = new Date();
  var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
 var daysSinceStart = Math.round(Math.abs((seasonStartDate.getTime() - today.getTime())/(oneDay)));
