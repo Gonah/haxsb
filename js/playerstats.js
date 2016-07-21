@@ -18,7 +18,7 @@ var playerLookup = [];
      profileField.append('<dt>Seasons:</dt><dd>' + player.gsx$seasons.$t + '</dd>');
      profileField.append('<dt>Record:</dt><dd>' + player.gsx$record.$t + '</dd></dd>');
      profileField.append('<dt>Goals:</dt><dd>' + player.gsx$goals.$t + '</dd>');
-     profileField.append('</dd><dt>GPM:</dt><dd>' + player.gsx$gpm.$t '</dd>');
+     profileField.append('</dd><dt>GPM:</dt><dd>' + player.gsx$gpm.$t + '</dd>');
      }
    });
  };
