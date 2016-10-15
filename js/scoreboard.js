@@ -41,8 +41,8 @@ $.get( d2SpreadsheetUrl, function( data ) {
      var awayTeam = game.gsx$awayteam.$t;
      var homeScore = game.gsx$homescore.$t ? game.gsx$homescore.$t : "H";
      var awayScore = game.gsx$awayscore.$t ? game.gsx$awayscore.$t : "A";
-     var ft = game.gsx$ft.$t;
-     gameTime = (ft.length > 0) ? ft : gameTime;
+    //  var ft = game.gsx$ft.$t;
+    //  gameTime = (ft.length > 0) ? ft : gameTime;
      if(parseInt(homeScore) > parseInt(awayScore)) {
          homeTeam = '<b>'+game.gsx$hometeam.$t+'</b>';
      }
