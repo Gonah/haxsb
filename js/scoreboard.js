@@ -30,7 +30,7 @@ $.get( d2SpreadsheetUrl, function( data ) {
    var link = (division=='d1')?d1SpreadsheetPubHtml:d2SpreadsheetPubHtml;
    ul.attr('onclick', "window.open('"+link+"', '_blank');");
    var divisionName = division=='d1' ? 'Divsion I' : 'Division II';
-   var gameDayName = ((gameday-1)%2==(0+daysSkipped)) ? "Sunday" : "Thursday";
+   var gameDayName = ((gameday-1)%2==(0+daysSkipped)) ? "Thursday" : "Sunday";
    var week = Math.ceil(gameday/2);
    ul.append('<li style="margin-right: 1px; width: 75px;" class="day-box"><p>'+divisionName+'</p><p>Week ' + week + '</p><p>'+gameDayName+'</p></li>');
    for (var i = numTeams * (gameday - 1); i < numTeams * gameday; i++) {
