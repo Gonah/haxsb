@@ -1,10 +1,10 @@
 // Update each ssn
-var seasonStart = "2016-09-29";
-var d1SpreadsheetKey = "1l3FT8O62YHIjdz5v-XSOCwC1GddXpbHPzi6wiIS4OXQ"
-var d2SpreadsheetKey = "10UNmCFeSr6gOAF3d-ZuJI6Sv3EZVn1GRGfc6vYNoIu8"
+var seasonStart = "2017-01-05";
+var d1SpreadsheetKey = "1fUOTfxLYCrHuxnyUi7Djq3u8ZNBS-vpJTplYPTvb_-w"
+var d2SpreadsheetKey = "1rjAq9iwdOiIJlwkBC-IHPjNehGs79Rb0Xl42WgwzxyY"
  var daysSkipped = 0;
  var numTeamsD1 = 6;
- var numTeamsD2 = 6;
+ var numTeamsD2 = 8;
  // Don't change anything below this
 var d1SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/"+d1SpreadsheetKey+"/1/public/values?alt=json"
   var d2SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/"+d2SpreadsheetKey+"/1/public/values?alt=json"
