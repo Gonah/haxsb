@@ -1,5 +1,5 @@
-var d1SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/1l3FT8O62YHIjdz5v-XSOCwC1GddXpbHPzi6wiIS4OXQ/2/public/values?alt=json"
-var d2SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/10UNmCFeSr6gOAF3d-ZuJI6Sv3EZVn1GRGfc6vYNoIu8/2/public/values?alt=json"
+var d1SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/1fUOTfxLYCrHuxnyUi7Djq3u8ZNBS-vpJTplYPTvb_-w/2/public/values?alt=json"
+var d2SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/1rjAq9iwdOiIJlwkBC-IHPjNehGs79Rb0Xl42WgwzxyY/2/public/values?alt=json"
 $.get(d1SpreadsheetUrl, function(data) {
   updateContent(data, 'division_1');
 });
