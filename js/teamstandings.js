@@ -1,11 +1,11 @@
-var d1SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/1fUOTfxLYCrHuxnyUi7Djq3u8ZNBS-vpJTplYPTvb_-w/2/public/values?alt=json"
+var d1SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/110_VqVqPMxwJZ8azQ_p3IVLnO2GzEd3qSygrIS-9xQ4/2/public/values?alt=json"
 var d2SpreadsheetUrl = "https://spreadsheets.google.com/feeds/list/1rjAq9iwdOiIJlwkBC-IHPjNehGs79Rb0Xl42WgwzxyY/2/public/values?alt=json"
 $.get(d1SpreadsheetUrl, function(data) {
   updateContent(data, 'division_1');
 });
-$.get(d2SpreadsheetUrl, function(data) {
-  updateContent(data, 'division_2');
-});
+// $.get(d2SpreadsheetUrl, function(data) {
+//   updateContent(data, 'division_2');
+// });
 
 function updateContent(responseJson, division) {
   var tbody = $('#' + division);
