@@ -1,6 +1,6 @@
 // Update each ssn
-var seasonStart = "2017-01-05";
-var d1SpreadsheetKey = "1fUOTfxLYCrHuxnyUi7Djq3u8ZNBS-vpJTplYPTvb_-w"
+var seasonStart = "2017-06-08";
+var d1SpreadsheetKey = "110_VqVqPMxwJZ8azQ_p3IVLnO2GzEd3qSygrIS-9xQ4"
 var d2SpreadsheetKey = "1rjAq9iwdOiIJlwkBC-IHPjNehGs79Rb0Xl42WgwzxyY"
  var daysSkipped = 0;
  var numTeamsD1 = 6;
@@ -22,9 +22,9 @@ var gameday = parseInt((((daysSinceStart+1)/7)*2)+1-daysSkipped);
 $.get( d1SpreadsheetUrl, function( data ) {
        updateDivision(data, numTeamsD1, 'd1');
 });
-$.get( d2SpreadsheetUrl, function( data ) {
-       updateDivision(data, numTeamsD2, 'd2');
-});
+// $.get( d2SpreadsheetUrl, function( data ) {
+//        updateDivision(data, numTeamsD2, 'd2');
+// });
  function updateDivision(responseJson, numTeams, division) {
    var ul = $('#'+division);
    var link = (division=='d1')?d1SpreadsheetPubHtml:d2SpreadsheetPubHtml;
